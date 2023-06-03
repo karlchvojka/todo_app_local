@@ -1,41 +1,26 @@
-// NextJS Client Declaration
 "use client"
 
-// NextJS Component imports
-import Image from 'next/image'
+// CSS Imports
+import './globals.css'
+
+// Component Imports
+import Header from './components/modules/Header/Header'
 
 // MUI Imports
-import { 
-  AppBar,
-  Button,
-  CssBaseline,
-  Toolbar,
-  Typography
-} from '@mui/material'
-import {
-  createTheme,
-  ThemeProvider
-} from '@mui/material/styles'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 
-// Theme Config
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark'
-  }
-})
+    mode: 'dark',
+  },
+});
 
-export default function Home() {
+export default function Page() {
   return (
     <ThemeProvider theme={darkTheme}>
-    <main className="main">
-      <AppBar position="absolute" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Todo App
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </main>
+      <main>
+        <Header />
+      </main>
     </ThemeProvider>
   )
 }
