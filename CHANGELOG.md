@@ -17,6 +17,9 @@ Implementing Input form.
     - ./src/app/components/layouts
     - ./src/app/components/modules
 
+- Built out Add Task Dialog
+  - ./src/app/components/modules/AddTaskDialog
+
 ### Changed
 - Refactored:
   - ./src/app/layout.tsx

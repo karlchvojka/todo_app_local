@@ -10,23 +10,16 @@ import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 
-export default function Header() {
+export default function Header({ handleOpen }) {
   return (
     <AppBar position="static">
       <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-        </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Todo App
         </Typography>
-        <Button color="inherit">Login</Button>
+        <Button variant="outlined" onClick={handleOpen}> 
+          Add Todo
+        </Button>
       </Toolbar>
     </AppBar>
   )
