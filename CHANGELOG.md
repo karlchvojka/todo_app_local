@@ -6,6 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2023-06-2
+Implementing Input form.
+
+### Added
+- Built out folder structure
+  - Added:
+    - ./src/app/components
+    - ./src/app/components/elements
+    - ./src/app/components/layouts
+    - ./src/app/components/modules
+
+- Built out Add Task Dialog
+  - ./src/app/components/modules/AddTaskDialog
+
+### Changed
+- Refactored:
+  - ./src/app/layout.tsx
+  - ./src/app/page.tsx
+
 ## [0.1.0] - 2023-06-02
 Initial install and config:
 
@@ -20,3 +39,5 @@ Initial install and config:
 - ./src/app/page.tsx
   - Removed default page
   - Added a MUI to be sure of MUI install/config.
+
+
