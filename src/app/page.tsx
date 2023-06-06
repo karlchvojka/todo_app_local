@@ -12,6 +12,7 @@ import Grid from '@mui/material/Unstable_Grid2'
 import {
   Box,
   Button,
+  Link,
   Paper,
   Typography 
 } from '@mui/material'
@@ -62,7 +63,7 @@ export default function Page() {
                 gutterBottom
                 variant='body1'
               >
-                Thank you for trying out the Todo App.
+                Thank you for trying out my Todo App.
               </Typography>
               <Typography
                 align='center'
@@ -77,6 +78,21 @@ export default function Page() {
                 variant='body1'
               >
                 This is NOT a Production App.
+              </Typography>
+              <Typography
+                align='center'
+                gutterBottom
+                variant='body1'
+              >
+                - Karl Chvojka
+              </Typography>
+              <Typography
+                align='center'
+                gutterBottom
+                variant='body1'
+              >
+                <Link href="https://github.com/karlchvojka" sx={{ m:1 }}>Github</Link>
+                <Link href="https://www.linkedin.com/in/karlchvojka/">LinkedIn</Link>
               </Typography>
             </Paper>
           </Grid>
